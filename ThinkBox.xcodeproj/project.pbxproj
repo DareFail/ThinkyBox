@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4A37CBF118F4C11F00A1F969 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A37CBF018F4C11F00A1F969 /* main.cpp */; };
 		4A37CBF318F4C11F00A1F969 /* ThinkBox.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A37CBF218F4C11F00A1F969 /* ThinkBox.1 */; };
+		4A37CBFB18F4C21600A1F969 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A37CBFA18F4C21600A1F969 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4A37CBFE18F4CFFE00A1F969 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A37CBFD18F4CFFE00A1F969 /* OpenGL.framework */; };
+		4A37CC0018F4D00300A1F969 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A37CBFF18F4D00300A1F969 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,10 @@
 		4A37CBED18F4C11F00A1F969 /* ThinkBox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ThinkBox; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A37CBF018F4C11F00A1F969 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4A37CBF218F4C11F00A1F969 /* ThinkBox.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ThinkBox.1; sourceTree = "<group>"; };
+		4A37CBFA18F4C21600A1F969 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4A37CBFC18F4C49500A1F969 /* ThinkGear.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ThinkGear.bundle; path = ../ThinkGear.bundle; sourceTree = "<group>"; };
+		4A37CBFD18F4CFFE00A1F969 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4A37CBFF18F4D00300A1F969 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A37CC0018F4D00300A1F969 /* GLUT.framework in Frameworks */,
+				4A37CBFE18F4CFFE00A1F969 /* OpenGL.framework in Frameworks */,
+				4A37CBFB18F4C21600A1F969 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +54,12 @@
 		4A37CBE418F4C11F00A1F969 = {
 			isa = PBXGroup;
 			children = (
+				4A37CBFF18F4D00300A1F969 /* GLUT.framework */,
+				4A37CBFD18F4CFFE00A1F969 /* OpenGL.framework */,
+				4A37CBFA18F4C21600A1F969 /* CoreFoundation.framework */,
 				4A37CBEF18F4C11F00A1F969 /* ThinkBox */,
 				4A37CBEE18F4C11F00A1F969 /* Products */,
+				4A37CBFC18F4C49500A1F969 /* ThinkGear.bundle */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +211,11 @@
 		4A37CBF718F4C11F00A1F969 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jamespsteinberg/Downloads,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +223,11 @@
 		4A37CBF818F4C11F00A1F969 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jamespsteinberg/Downloads,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -227,6 +251,7 @@
 				4A37CBF818F4C11F00A1F969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
