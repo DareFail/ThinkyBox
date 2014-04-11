@@ -12,6 +12,7 @@
 		4A37CBFB18F4C21600A1F969 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A37CBFA18F4C21600A1F969 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4A37CBFE18F4CFFE00A1F969 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A37CBFD18F4CFFE00A1F969 /* OpenGL.framework */; };
 		4A37CC0018F4D00300A1F969 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A37CBFF18F4D00300A1F969 /* GLUT.framework */; };
+		4AC1AA7818F8302E00CF6608 /* neuroSkyEEG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AC1AA7618F8302E00CF6608 /* neuroSkyEEG.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		4A37CBFC18F4C49500A1F969 /* ThinkGear.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ThinkGear.bundle; path = ../ThinkGear.bundle; sourceTree = "<group>"; };
 		4A37CBFD18F4CFFE00A1F969 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		4A37CBFF18F4D00300A1F969 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		4AC1AA7618F8302E00CF6608 /* neuroSkyEEG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neuroSkyEEG.cpp; sourceTree = "<group>"; };
+		4AC1AA7718F8302E00CF6608 /* neuroSkyEEG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neuroSkyEEG.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				4A37CBF018F4C11F00A1F969 /* main.cpp */,
+				4AC1AA7618F8302E00CF6608 /* neuroSkyEEG.cpp */,
+				4AC1AA7718F8302E00CF6608 /* neuroSkyEEG.h */,
 				4A37CBF218F4C11F00A1F969 /* ThinkBox.1 */,
 			);
 			path = ThinkBox;
@@ -132,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A37CBF118F4C11F00A1F969 /* main.cpp in Sources */,
+				4AC1AA7818F8302E00CF6608 /* neuroSkyEEG.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
