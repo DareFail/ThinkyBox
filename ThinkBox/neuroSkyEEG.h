@@ -10,6 +10,7 @@
 #define __ThinkBox__neuroSkyEEG__
 
 #include <iostream>
+#include <signal.h>
 #include <CoreFoundation/CoreFoundation.h>
 
 class NeuroSkyEEG

@@ -8,7 +8,9 @@
 
 #include "neuroSkyEEG.h"
 
+
 int connectionID = -1;        // ThinkGear connection handle
+
 CFURLRef bundleURL;           // path reference to bundle
 CFBundleRef thinkGearBundle;  // bundle reference
 
